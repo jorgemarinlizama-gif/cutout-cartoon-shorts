@@ -1,0 +1,16 @@
+import React from "react";
+import {Composition} from "remotion";
+import {Main} from "./compositions/Main";
+
+export const RemotionRoot: React.FC = () => (
+  <>
+    <Composition
+      id="Main"
+      component={Main}
+      durationInFrames={30 * 30}
+      fps={30}
+      width={1080}
+      height={1920}
+    />
+  </>
+);
